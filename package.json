@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:e2e": "cypress run --e2e",
-    "test:component": "cypress run --component"
+    "test": "playwright test",
+    "start-server-and-test": "start-server-and-test start http://localhost:3000 test"
   },
   "author": "Andrew Shaw Care <andrewshawcare@gmail.com>",
   "license": "ISC",
@@ -21,6 +21,8 @@
   "devDependencies": {
     "@types/node": "20.1.1",
     "@types/react": "18.2.6",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "@playwright/test": "1.33.0",
+    "start-server-and-test": "2.0.0"
   }
 }
